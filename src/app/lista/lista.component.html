@@ -6,6 +6,7 @@
   <table class="table table-striped">
     <thead>
       <tr>
+        <th scope="col">Posición</th>
         <th scope="col">Número</th>
         <th scope="col">Corredor</th>
         <th scope="col">Nombre</th>
@@ -15,8 +16,8 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let corredor of corredores">
-        
+      <tr *ngFor="let corredor of corredores; let i = index">
+        <td>{{ i+1 }}°</td>
           <td>{{corredor.data.numero}}</td>
           <td><img class="mini-image" [src]="corredor.data.image" alt=""></td>
           <td>{{corredor.data.nombre}}</td>
