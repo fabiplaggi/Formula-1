@@ -1,0 +1,30 @@
+<div>
+  <h2 class="TituloLista">Parrilla de Salida</h2>
+
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Número</th>
+        <th scope="col">Corredor</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">País</th>
+        <th scope="col">Escuderia</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let video of corredores">
+        
+          <td>{{video.data.numero}}</td>
+          <td><img class="mini-image" [src]="video.data.image" alt=""></td>
+          <td>{{video.data.nombre}}</td>
+          <td><img class="imgage-pais" [src]="video.data.pais" alt=""></td>
+          <td>{{video.data.escuderia}}</td>
+          <td><button class="btn-delete">Eliminar</button></td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
