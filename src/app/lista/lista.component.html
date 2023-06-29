@@ -15,14 +15,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let video of corredores">
+      <tr *ngFor="let corredor of corredores">
         
-          <td>{{video.data.numero}}</td>
-          <td><img class="mini-image" [src]="video.data.image" alt=""></td>
-          <td>{{video.data.nombre}}</td>
-          <td><img class="imgage-pais" [src]="video.data.pais" alt=""></td>
-          <td>{{video.data.escuderia}}</td>
-          <td><button class="btn-delete">Eliminar</button></td>
+          <td>{{corredor.data.numero}}</td>
+          <td><img class="mini-image" [src]="corredor.data.image" alt=""></td>
+          <td>{{corredor.data.nombre}}</td>
+          <td><img class="image-pais" [src]="corredor.data.pais" alt=""></td>
+          <td>{{corredor.data.escuderia}}</td>
+          <td><button class="botonEliminar"(click)="borrarCorredor(corredor)" >Eliminar</button></td>
         
       </tr>
     </tbody>

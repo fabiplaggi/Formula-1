@@ -93,10 +93,10 @@ tbody {
 }
 
 tbody tr:hover {
-  background: rgb(255, 0, 0);
+  background: rgb(46, 1, 1);
 }
 
-.btn-delete {
+.botonEliminar {
   background-color: red;
   color: white;
   border: none;

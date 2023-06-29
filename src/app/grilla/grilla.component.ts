@@ -21,10 +21,9 @@ export class GrillaComponent implements OnInit {
   }
  
   AgregarALista() {
-      //this.servicioCorredores.addCorredor(this.corredor);
       this.servicioCorredores.disparadorCorredores.emit(
         { data: this.dataEntrante }
       )
-    }
-
+      
+  }
 }
