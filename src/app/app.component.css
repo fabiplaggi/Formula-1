@@ -6,6 +6,26 @@
   padding-bottom: 1rem;
 }
 
-h1 {
+
+
+.container {
+  text-align: center; /* Centrar el contenido */
+}
+.container img {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  display: inline-block; /* Mostrar la imagen como un elemento en línea */
+  vertical-align: middle; /* Alinear verticalmente con el texto */
+  width: 50px; /* Ancho deseado de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+.container h1 {
   color: white;
+  text-align: center;
+  font-family: Calisto MT, serif;
+  font-size: 50px;
+  margin-top: 20px;
+  display: inline-block; /* Mostrar el título como un elemento en línea */
+  vertical-align: middle; /* Alinear verticalmente con la imagen */
+  align-items: center;
 }
